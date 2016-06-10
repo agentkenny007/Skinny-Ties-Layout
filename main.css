@@ -1,2 +1,112 @@
-body {  }
-a { text-decoration: none; }
+@import url(https://fonts.googleapis.com/css?family=Catamaran:100,400,700);
+
+body { font: 14px 'Catamaran'; }
+a { color: #33A1FF; text-decoration: none; }
+ul, form { margin: 0; padding: 0; }
+a:hover { color: #1782E0; }
+li { list-style: none; }
+input { border: 1px solid #d8d8d8; padding: 0 8px; border-radius: 2px; box-shadow: #f4f4f4 0 0 0 4px; }
+header:after {
+    content: '';
+    position: absolute;
+    width: 100%; height: 5px;
+    background: url(images/perforated-bottom@2x.png) repeat-x;
+    background-size: auto 5px;
+}
+
+.content { position: relative; width: 1120px; margin: auto; overflow: auto; }
+
+.promotions { color: white;background: #fa6938; padding: 7px 0; }
+.promotions span { font-size: 15px; margin-left: 20px; text-shadow: 0 1px 0 rgba(0, 0, 0, .5); }
+.promotions span:first-child { font-size: 13px; background: rgba(0, 0, 0, .2); padding: 3px 8px 0; border-radius: 4px; }
+
+.logo {
+    float: left; display: block;
+    width: 128px; height: 117px;
+    margin-left: 30px;
+    background: url(images/logo-stack@2x.png) no-repeat;
+    background-size: 100%;
+}
+
+.nav-links { float: left; position: relative; top: 20px; margin: 20px 0 0 60px; }
+.nav-links li { display: inline; }
+.nav-links li a { position: relative; color: black; font-size: 25px; font-weight: 100; padding: 0 12px; }
+.nav-links li a:after {
+    content: '';
+    position: absolute;
+    left: 50%; margin-left: -3px; bottom: 3px;
+    width: 0; height: 0;
+    border-style: solid;
+    border-width: 3px 3px 0 3px;
+    border-color: #e0e0e0 transparent transparent transparent;
+}
+
+.account-links { position: absolute; top: 15px; right: 25px; }
+.account-links a { font-size: 11px; color: #909090; margin-left: 8px; letter-spacing: 1px; }
+
+.cart {
+    position: absolute; display: block;
+    top: 40px; right: 190px;
+    color: #606060;
+    height: 34px; line-height: 38px;
+    padding: 0 36px 0 32px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+.cart:before {
+    content: '';
+    width: 14px; height: 14px;
+    position: absolute;
+    left: 10px; top: 50%; margin-top: -7px;
+    background: url(images/sprite@2x.png) -45px -16px no-repeat;
+    background-size: 400px;
+}
+.cart span span {
+    position: absolute; display: block;
+    background: #c8c8c8;
+    width: 20px; height: 20px;
+    right: 8px; top: 50%; margin-top: -10px;
+    color: white;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 3px;
+}
+.cart span span:before {
+    content: '';
+    position: absolute;
+    left: -4px; top: 50%; margin-top: -5px;
+    width: 0; height: 0;
+    border-style: solid;
+    border-width: 5px 5px 5px 0;
+    border-color: transparent #c8c8c8 transparent transparent;
+}
+
+.search { position: absolute; top: 44px; right: 30px; }
+.search input { width: 145px; height: 28px; padding-left: 30px; }
+.search span {
+    position: absolute; display: block;
+    left: 10px; top: 50%; margin-top: -7px;
+    width: 14px; height: 0; padding-top: 14px;
+    background: url(images/sprite@2x.png) -15px -15px no-repeat;
+    background-size: 400px;
+}
+
+.the-ties { margin-bottom: 50px; border-bottom: 1px solid rgba(0,0,0,0.04); background: #f4f4f4; text-align: center; }
+.the-ties h2 { margin: 0 0 65px; font-size: 60px; font-weight: normal; line-height: 66px; }
+.the-ties ul { width: 945px; margin: 0 auto 45px; overflow: auto; }
+.the-ties li {
+    float: left;
+    width: 75px; padding-top: 165px;
+    margin: 0 15px 15px;
+    background-size: 100% auto !important;
+    font-size: 16px;
+}
+.the-ties .black { background: url(images/black@1.5x.jpg) no-repeat; }
+.the-ties .blue { background: url(images/blue@1.5x.jpg) no-repeat; }
+.the-ties .collegiate { background: url(images/collegiate@1.5x.jpg) no-repeat; }
+.the-ties .cotton { background: url(images/cotton@1.5x.jpg) no-repeat; }
+.the-ties .favorites { background: url(images/favorites@1.5x.jpg) no-repeat; }
+.the-ties .graphic { background: url(images/graphic@1.5x.jpg) no-repeat; }
+.the-ties .plaid { background: url(images/plaid@1.5x.jpg) no-repeat; }
+.the-ties .silk { background: url(images/silk@1.5x.jpg) no-repeat; }
+.the-ties .striped { background: url(images/striped@1.5x.jpg) no-repeat; }
